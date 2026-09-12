@@ -18,9 +18,10 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
           <Image
             src={product.image}
             alt={product.imageAlt}
-            fill
-            className="object-cover object-center"
-            priority
+          fill
+          className="object-cover object-center"
+          priority
+          sizes="(max-width: 1023px) 100vw, 55vw"
           />
           {product.badge && (
             <div className="absolute top-2 left-2">

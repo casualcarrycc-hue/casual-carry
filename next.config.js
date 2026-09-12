@@ -1,12 +1,23 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  compress: true,
+  poweredByHeader: false,
   images: {
-    remotePatterns: [
+    formats: ["image/avif", "image/webp"],
+    minimumCacheTTL: 31536000,
+  },
+  async headers() {
+    return [
       {
-        protocol: "https",
-        hostname: "lh3.googleusercontent.com",
+        source: "/images/:path*",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
+          },
+        ],
       },
-    ],
+    ];
   },
 };
 

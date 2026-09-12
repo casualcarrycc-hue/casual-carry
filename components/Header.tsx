@@ -20,11 +20,11 @@ export default function Header() {
           </button>
           <Link href="/" aria-label="Casual Carry home">
             <Image
-              src="/images/logo.png"
+              src="/images/logo-light.jpg"
               alt="Casual Carry"
-              width={160}
-              height={46}
-              className="h-8 md:h-10 w-auto object-contain"
+              width={440}
+              height={320}
+              className="h-10 md:h-12 w-auto object-contain mix-blend-multiply"
               priority
             />
           </Link>

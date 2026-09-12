@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Bodoni_Moda, EB_Garamond, Barlow_Condensed } from "next/font/google";
 import "./globals.css";
 import { NavDrawerProvider } from "@/components/NavDrawerContext";
@@ -9,7 +9,7 @@ import Footer from "@/components/Footer";
 
 const bodoni = Bodoni_Moda({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "500"],
   style: ["normal", "italic"],
   variable: "--font-bodoni",
   display: "swap",
@@ -17,8 +17,8 @@ const bodoni = Bodoni_Moda({
 
 const garamond = EB_Garamond({
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
-  style: ["normal", "italic"],
+  weight: ["400", "600"],
+  style: ["normal"],
   variable: "--font-garamond",
   display: "swap",
 });
@@ -26,7 +26,7 @@ const garamond = EB_Garamond({
 const barlow = Barlow_Condensed({
   subsets: ["latin"],
   weight: ["400", "600"],
-  style: ["normal", "italic"],
+  style: ["normal"],
   variable: "--font-barlow",
   display: "swap",
 });
@@ -39,10 +39,15 @@ export const metadata: Metadata = {
   description:
     "Casual Carry: full-grain, vegetable-tanned leather handbags handcrafted for the modern Indian woman.",
   icons: {
-    icon: "/images/logo.png",
-    shortcut: "/images/logo.png",
-    apple: "/images/logo.png",
+    icon: [{ url: "/images/favicon.png", type: "image/png", sizes: "192x192" }],
+    shortcut: "/images/favicon.png",
+    apple: [{ url: "/images/favicon.png", sizes: "192x192" }],
   },
+};
+
+export const viewport: Viewport = {
+  colorScheme: "light",
+  themeColor: "#fff8f3",
 };
 
 export default function RootLayout({
@@ -55,12 +60,6 @@ export default function RootLayout({
       lang="en"
       className={`h-full ${bodoni.variable} ${garamond.variable} ${barlow.variable}`}
     >
-      <head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-          rel="stylesheet"
-        />
-      </head>
       <body className="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen">
         <NavDrawerProvider>
           <Header />

@@ -20,11 +20,12 @@ export default function Footer() {
         <div className="grid gap-space-xl md:grid-cols-2 lg:grid-cols-[1.35fr_0.8fr_0.8fr_1fr] lg:gap-space-2xl">
           <div className="max-w-sm">
             <Image
-              src="/images/logo.png"
+              src="/images/logo-footer.png"
               alt="Casual Carry"
-              width={160}
-              height={46}
-              className="h-10 w-auto brightness-0 invert mb-space-md"
+              width={700}
+              height={394}
+              sizes="224px"
+              className="w-56 h-auto rounded-lg mb-space-md"
             />
             <p className="font-body-md text-body-md text-inverse-on-surface/75 leading-relaxed">
               Considered leather bags, shaped by hand in India and designed to

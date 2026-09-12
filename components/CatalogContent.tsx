@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { useSearchParams } from "next/navigation";
+import Link from "next/link";
 import ProductCard from "./ProductCard";
 import { PRODUCTS } from "@/lib/products";
 
@@ -51,7 +52,7 @@ export default function CatalogContent() {
       <section className="page-shell pb-space-xl lg:pb-space-2xl">
         {filtered.length ? (
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-gutter-mobile md:gap-x-gutter gap-y-space-lg lg:gap-y-space-xl">
-            {filtered.map((product) => <ProductCard key={product.slug} product={product} />)}
+            {filtered.map((product, index) => <ProductCard key={product.slug} product={product} priority={index === 0} />)}
           </div>
         ) : (
           <div className="rounded-xl bg-surface-container-low p-space-xl text-center">
@@ -71,7 +72,7 @@ export default function CatalogContent() {
           </div>
           <div className="relative mt-space-md md:mt-0">
             <p className="font-body-md text-body-md text-secondary-fixed leading-relaxed">Natural bark extracts preserve the grain without masking it. Time, touch, and use create a patina unique to its owner.</p>
-            <a href="/journal/leather-care" className="inline-flex mt-space-md font-label-md text-label-md uppercase tracking-widest text-on-secondary border-b border-on-secondary/50">Read the care journal</a>
+            <Link href="/journal/leather-care" className="inline-flex mt-space-md font-label-md text-label-md uppercase tracking-widest text-on-secondary border-b border-on-secondary/50">Read the care journal</Link>
           </div>
         </div>
       </section>

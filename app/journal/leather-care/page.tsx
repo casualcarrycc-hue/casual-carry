@@ -40,6 +40,7 @@ export default function LeatherCarePage() {
               alt="Macro studio photograph of a bottle-green full-grain leather crossbody bag showing saddle stitching and brass hardware"
               fill
               className="object-cover"
+              sizes="(max-width: 767px) 100vw, 1280px"
             />
             <div className="absolute bottom-2 left-2 bg-surface/90 backdrop-blur-md px-space-sm py-space-xs rounded-lg shadow-sm">
               <span className="font-label-sm text-label-sm text-on-surface tracking-widest uppercase">
@@ -48,9 +49,7 @@ export default function LeatherCarePage() {
             </div>
           </div>
           <div className="p-space-sm pt-space-md flex items-start gap-space-sm">
-            <span className="material-symbols-outlined text-primary text-[20px] mt-0.5">
-              verified
-            </span>
+            <span aria-hidden="true" className="text-primary text-[20px] mt-0.5">✓</span>
             <p className="font-body-sm text-body-sm text-on-surface-variant italic">
               Botanical bark-tanned bovine hide showing authentic natural
               pebble grain and saddle-stitched wax thread.
@@ -146,9 +145,6 @@ export default function LeatherCarePage() {
         <div className="bg-secondary text-on-secondary rounded-xl p-space-lg shadow-md relative overflow-hidden">
           <div className="absolute -right-10 -bottom-10 w-44 h-44 rounded-full bg-secondary-container/10 pointer-events-none blur-2xl" />
           <div className="flex items-center gap-space-xs mb-space-xs text-secondary-fixed">
-            <span className="material-symbols-outlined text-[18px]">
-              handyman
-            </span>
             <span className="font-label-sm text-label-sm tracking-[0.16em] uppercase">
               Lifelong Commitment
             </span>
@@ -175,6 +171,7 @@ export default function LeatherCarePage() {
                 alt="Editorial close-up of hands applying beeswax balm to saddle-stitched leather"
                 fill
                 className="object-cover"
+                sizes="(max-width: 767px) 50vw, 420px"
               />
             </div>
             <span className="font-label-sm text-label-sm text-tertiary uppercase">
@@ -188,6 +185,7 @@ export default function LeatherCarePage() {
                 alt="Brass crafting tool resting on uncut hunter-green full-grain leather hide"
                 fill
                 className="object-cover"
+                sizes="(max-width: 767px) 50vw, 420px"
               />
             </div>
             <span className="font-label-sm text-label-sm text-tertiary uppercase">

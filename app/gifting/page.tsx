@@ -3,9 +3,7 @@ export const metadata = { title: "Curated Gifting — Casual Carry" };
 export default function GiftingPage() {
   return (
     <div className="page-shell pt-space-xl pb-space-2xl flex flex-col items-center text-center min-h-[50vh] justify-center">
-      <span className="material-symbols-outlined text-primary text-[40px] mb-space-sm">
-        redeem
-      </span>
+      <span aria-hidden="true" className="font-headline-md text-headline-md text-primary mb-space-sm">CC</span>
       <h1 className="font-headline-md text-headline-md text-on-surface mb-space-xs">
         Curated Gifting
       </h1>

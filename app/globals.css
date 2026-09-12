@@ -45,14 +45,6 @@
   display: none;
 }
 
-.material-symbols-outlined {
-  font-variation-settings:
-    "FILL" 0,
-    "wght" 300,
-    "GRAD" 0,
-    "opsz" 24;
-}
-
 @layer components {
   .page-shell {
     @apply w-full max-w-[1440px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin;

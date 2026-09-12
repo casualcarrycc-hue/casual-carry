@@ -36,9 +36,7 @@ export default function ClimateCalculator() {
     <div className="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
       <div className="flex items-center justify-between mb-space-sm">
         <div className="flex items-center gap-space-xs">
-          <span className="material-symbols-outlined text-secondary text-[22px]">
-            water_drop
-          </span>
+          <span aria-hidden="true" className="text-secondary text-[22px]">◇</span>
           <h4 className="font-headline-sm text-headline-sm text-on-surface">
             Climate Balm Calculator
           </h4>

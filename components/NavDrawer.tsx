@@ -29,32 +29,33 @@ export default function NavDrawer() {
     };
   }, [isOpen, close]);
 
+  if (!isOpen) return null;
+
   return (
     <>
       <div
-        aria-hidden={!isOpen}
+        aria-hidden="true"
         onClick={close}
-        className={`md:hidden fixed inset-0 z-40 bg-on-surface/40 backdrop-blur-md transition-opacity duration-300 ${isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`}
+        className="md:hidden fixed inset-0 z-40 bg-on-surface/40 backdrop-blur-md"
       />
       <aside
         aria-label="Catalog navigation"
-        aria-hidden={!isOpen}
-        className={`md:hidden fixed top-0 left-0 bottom-0 z-50 w-[88%] max-w-[360px] bg-surface shadow-[12px_0_48px_rgba(28,26,23,0.18)] overflow-y-auto pt-safe pb-safe transition-transform duration-300 ${isOpen ? "translate-x-0" : "-translate-x-full"}`}
+        className="md:hidden fixed top-0 left-0 bottom-0 z-50 w-[88%] max-w-[360px] bg-surface shadow-[12px_0_48px_rgba(28,26,23,0.18)] overflow-y-auto pt-safe pb-safe"
       >
         <div className="px-margin-mobile py-space-md flex items-center justify-between border-b border-outline-variant/30">
           <Image
-            src="/images/logo.png"
+            src="/images/logo-light.jpg"
             alt="Casual Carry"
-            width={140}
-            height={40}
-            className="h-8 w-auto"
+            width={440}
+            height={320}
+            className="h-12 w-auto mix-blend-multiply"
           />
           <button
             onClick={close}
             aria-label="Close navigation"
             className="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center"
           >
-            <span className="material-symbols-outlined text-[20px]">close</span>
+            <span aria-hidden="true" className="text-2xl leading-none">×</span>
           </button>
         </div>
         <nav className="px-margin-mobile py-space-lg flex flex-col gap-space-md">
@@ -79,6 +80,7 @@ export default function NavDrawer() {
               alt="Bottle green leather and brass craftsmanship detail"
               fill
               className="object-cover"
+              sizes="320px"
             />
           </div>
           <div className="p-space-md">
