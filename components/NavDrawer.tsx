@@ -90,12 +90,18 @@ export default function NavDrawer() {
             </p>
           </div>
         </div>
-        <div className="px-margin-mobile py-space-lg mt-space-lg border-t border-outline-variant/30">
+        <div className="px-margin-mobile py-space-lg mt-space-lg border-t border-outline-variant/30 flex flex-col items-start gap-space-xs">
           <a
             href="mailto:casualcarrycc@gmail.com"
             className="font-label-md text-label-md uppercase tracking-widest text-primary"
           >
             casualcarrycc@gmail.com
+          </a>
+          <a href="tel:+919027002614" className="font-label-md text-label-md uppercase tracking-widest text-primary">
+            +91 90270 02614
+          </a>
+          <a href="https://www.instagram.com/casualcarrycc/" target="_blank" rel="noreferrer" className="font-label-md text-label-md uppercase tracking-widest text-primary">
+            Instagram · @casualcarrycc
           </a>
         </div>
       </aside>

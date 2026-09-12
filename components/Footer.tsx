@@ -42,34 +42,24 @@ export default function Footer() {
             </h2>
             <a
               href="mailto:casualcarrycc@gmail.com"
-              className="font-body-md text-body-md hover:text-primary-fixed-dim transition-colors"
+              className="block font-body-md text-body-md hover:text-primary-fixed-dim transition-colors"
             >
               casualcarrycc@gmail.com
             </a>
+            <a
+              href="tel:+919027002614"
+              className="block font-body-md text-body-md hover:text-primary-fixed-dim transition-colors mt-space-xs"
+            >
+              +91 90270 02614
+            </a>
             <div className="flex flex-wrap gap-space-sm mt-space-md">
               <a
-                href="https://www.instagram.com/"
+                href="https://www.instagram.com/casualcarrycc/"
                 target="_blank"
                 rel="noreferrer"
                 className="footer-social"
               >
-                Instagram
-              </a>
-              <a
-                href="https://www.pinterest.com/"
-                target="_blank"
-                rel="noreferrer"
-                className="footer-social"
-              >
-                Pinterest
-              </a>
-              <a
-                href="https://www.facebook.com/"
-                target="_blank"
-                rel="noreferrer"
-                className="footer-social"
-              >
-                Facebook
+                Instagram · @casualcarrycc
               </a>
             </div>
           </div>
