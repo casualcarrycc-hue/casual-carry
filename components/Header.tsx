@@ -52,7 +52,9 @@ export default function Header() {
             Gifting
           </Link>
           <a
-            href="mailto:casualcarrycc@gmail.com"
+            href="https://wa.me/919027002614?text=Hello%20Casual%20Carry%2C%20I%27d%20like%20to%20enquire%20about%20your%20collection."
+            target="_blank"
+            rel="noreferrer"
             className="inline-flex items-center px-space-md py-space-xs rounded-full border border-primary/35 text-primary font-label-md text-label-md uppercase tracking-widest hover:bg-primary hover:text-on-primary transition-colors"
           >
             Enquire

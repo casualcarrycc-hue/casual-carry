@@ -38,6 +38,11 @@ export const metadata: Metadata = {
   },
   description:
     "Casual Carry: full-grain, vegetable-tanned leather handbags handcrafted for the modern Indian woman.",
+  icons: {
+    icon: "/images/logo.png",
+    shortcut: "/images/logo.png",
+    apple: "/images/logo.png",
+  },
 };
 
 export default function RootLayout({

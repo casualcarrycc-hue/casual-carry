@@ -61,7 +61,9 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
               availability, dimensions, or material details.
             </p>
             <a
-              href={`mailto:casualcarrycc@gmail.com?subject=Enquiry about ${encodeURIComponent(product.name)}`}
+              href={`https://wa.me/919027002614?text=${encodeURIComponent(`Hello Casual Carry, I'd like to enquire about ${product.name}.`)}`}
+              target="_blank"
+              rel="noreferrer"
               className="inline-flex mt-space-md px-space-lg py-space-sm rounded-lg bg-primary text-on-primary font-label-lg text-label-lg uppercase tracking-widest"
             >
               Enquire about this piece
